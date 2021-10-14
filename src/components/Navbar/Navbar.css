@@ -1,5 +1,6 @@
 .NavbarItems {
-    border-style: solid;
+    border: 20px solid transparent;
+    border-image: url("flower3.jpg") 110 round;  
     height: 80px;
     display: flex;
     justify-content: center;
@@ -11,12 +12,12 @@
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
-    font-family: "Palatino";
+    font-family: 'Brush Script MT', cursive;
 }
 
 .fa-react {
     margin-left: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .nav-menu {
@@ -119,7 +120,6 @@
     }
 
     .nav-links-mobile:hover {
-        background: #fff;
         color: #6568F4;
         transition: 250ms;
     }
