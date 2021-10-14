@@ -1,4 +1,4 @@
-import * as api from '../api/index.tsx';
+import * as api from '../api/index.js';
 
 export const getAllProblemSetData = () =>  async (dispatch) => {
     try {

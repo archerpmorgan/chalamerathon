@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8b589f4d-d2e0-440f-8b15-c54222f204c1/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/accidentalchalametrathon",
+    "appService.deploySubpath": "."
+}

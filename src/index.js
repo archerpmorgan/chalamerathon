@@ -7,8 +7,6 @@ import appReducer from "./reducers/appReducer";
 import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import { MsalProvider } from "@azure/msal-react";
-import { msalInstance } from "./ActiveDirectoryConfig"
 import { composeWithDevTools } from "redux-devtools-extension";
 
 const composeEnhancers = composeWithDevTools({
@@ -19,11 +17,9 @@ const store = createStore(appReducer, composeEnhancers(applyMiddleware(thunk)));
 
 // Component
 const AppProvider = () => (
-  <MsalProvider instance={msalInstance}>
     <Provider store={store}>
       <App />
     </Provider>
-  </MsalProvider>
 );
 
 ReactDOM.render(<AppProvider />, document.getElementById("root"));
